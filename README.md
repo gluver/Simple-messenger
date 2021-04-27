@@ -1,7 +1,7 @@
 # Simple-messenger
 ## 1.How to build docker image
 Clone the repo onto your  machine \
-1.Enter `Simple-messenger/server`,in terminal run:
+1. Enter `Simple-messenger/server`,in terminal run:
 `docker build -t simple-chat-server .` \
 ***Sample Output:***
 ```shell
@@ -29,7 +29,7 @@ Removing intermediate container bc3d62371edf
 Successfully built 687cba09e3b2
 Successfully tagged simple-chat-server:latest
 ```
-2.Enter Simple-messenger/client,run:
+2. Enter Simple-messenger/client,run:
  `docker build -t simple-chat-client .` \
  ***Sample Output:***
  ```shell

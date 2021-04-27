@@ -31,7 +31,7 @@ Removing intermediate container bc3d62371edf
 Successfully built 687cba09e3b2
 Successfully tagged simple-chat-server:latest
 ```
-2. Enter Simple-messenger/client,run:  
+2. Enter `Simple-messenger/client`,run:  
  ```shell
  $ docker build -t simple-chat-client .
  ```   

@@ -21,18 +21,19 @@ def handle_client_in(conn,addr):
   broadcast(f"{nickname} joined in room")
   client[conn]=nickname
   while True:
-    msg_len=conn.recv(HEADER).decode('utf8')
-    if msg_len:
-      msg=conn.recv(int(msg_len)).decode('utf8')
-      print(f"{nickname}:{msg}")
-      broadcast(f"{nickname}:{msg}")
-      if msg == "!EXIT": 	 
-        del client[conn] 
-        print(f"{nickname} left room")
-        broadcast(f"{nickname} left room")
-        conn.close()
-        print(client)
-        break 
+    try:
+      msg_len=conn.recv(HEADER).decode('utf8')
+      if msg_len:
+        msg=conn.recv(int(msg_len)).decode('utf8')
+        print(f"{nickname}:{msg}")
+        broadcast(f"{nickname}:{msg}")
+    except: 	 
+      del client[conn] 
+      print(f"{nickname} left room")
+      broadcast(f"{nickname} left room")
+      conn.close()
+      print(client)
+      break 
 
 def broadcast(msg,client=client):
     for conn in client.keys():

@@ -1,9 +1,9 @@
 # Simple-messenger
 ## 1.How to build docker image
-Clone the repo onto your  machine \
+Clone the repo onto your  machine  
 1. Enter `Simple-messenger/server`,in terminal run:
-`docker build -t simple-chat-server .` \
-**Sample Output:**
+`docker build -t simple-chat-server .`  
+ 
 ```shell
 Sending build context to Docker daemon  4.096kB
 Step 1/4 : FROM python:3.8.9-alpine3.12
@@ -30,8 +30,8 @@ Successfully built 687cba09e3b2
 Successfully tagged simple-chat-server:latest
 ```
 2. Enter Simple-messenger/client,run:
- `docker build -t simple-chat-client .` \
- **Sample Output:**
+ `docker build -t simple-chat-client .`   
+  
  ```shell
  Sending build context to Docker daemon  3.584kB
 Step 1/4 : FROM python:3.8.9-alpine3.12
@@ -48,11 +48,11 @@ Removing intermediate container 99644ccd8d3d
 Successfully built c17602966efc
 Successfully tagged simple-chat-client:latest
 ```
-## 2.Run server:
+## 2.Run server:  
 `docker run -it simple-chat-server`
 ## 3.Run clients:
-For each client in each terminal:
+For each client in each terminal:  
 `docker run -it simple-chat-client`
-After see `"Welcome to the chatting room, please in put your nickname:"`
+After see   `"Welcome to the chatting room, please in put your nickname:"`    
 input a nickname then press enter,after that input messages for testing.
 Repeat this step for multiple clients

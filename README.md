@@ -3,7 +3,7 @@
 Clone the repo onto your  machine \
 1. Enter `Simple-messenger/server`,in terminal run:
 `docker build -t simple-chat-server .` \
-***Sample Output:***
+**Sample Output:**
 ```shell
 Sending build context to Docker daemon  4.096kB
 Step 1/4 : FROM python:3.8.9-alpine3.12
@@ -31,7 +31,7 @@ Successfully tagged simple-chat-server:latest
 ```
 2. Enter Simple-messenger/client,run:
  `docker build -t simple-chat-client .` \
- ***Sample Output:***
+ **Sample Output:**
  ```shell
  Sending build context to Docker daemon  3.584kB
 Step 1/4 : FROM python:3.8.9-alpine3.12

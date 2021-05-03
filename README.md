@@ -1,7 +1,7 @@
 # Simple-messenger
 ## 1.How to build docker image
 Clone the repo onto your  machine  
-1. Enter `Simple-messenger/server`,in terminal run:  
+1. Enter directory `Simple-messenger/server`,in terminal run:  
 ```shell 
 $ docker build -t simple-chat-server .
 ``` 
